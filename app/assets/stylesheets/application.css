@@ -41,3 +41,24 @@ li {
 #add-new-todo-button:active {
     box-shadow:5px 5px 5px pink;
 }
+h1 {
+    text-align:center;
+    margin-top: 20px;
+    color: #734925;
+}
+
+
+h2 {
+    display: inline-block;
+    font-size: 32px;
+    vertical-align: middle;
+    color: purple;
+    margin: 20px 0px;
+}
+
+span {
+    margin: 0px 0px 20px 0px;
+    padding: 10px 15px 10px 15px;
+    display:block;
+    width: 130px;
+}
