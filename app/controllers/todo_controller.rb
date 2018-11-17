@@ -21,6 +21,9 @@ class TodoController < ApplicationController
          elsif todo_id == "6"
             @todo_description = "swipe and wipe"
             @todo_pomodoro_estimate = 2
+            elsif todo_id == "7"
+            @todo_description = "BANG! TAN! SOYEON! DAN!"
+            @todo_pomodoro_estimate = 2
         end
     end
 end
