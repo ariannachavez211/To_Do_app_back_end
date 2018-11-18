@@ -2,9 +2,9 @@
     <div>
         <h2><%= @todo.description%></h2>
         <spon><%= @todo.pomodoro_estimate %> pomodoro</spon>
-       <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
+        <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
         <a href="/todo/destroy/<%= @todo.id %>" id="delete-todo-button">Delete</a>
-        <a href="/todo/index" class="simple-link">Go back</a>  
+        <a href="/" class="simple-link">Go back</a>  
         <%= @todo.description %>
         <h3>Todo #<%= params[:id] %></h3>
     </div>
