@@ -4,13 +4,12 @@
  <h1>To Do List</h1>    
         
         <ol>
-            <li><input type="checkbox"> <a href="show/1">clean room </a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href="show/2">cook dinner</a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href="show/3">watch tv</a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href= "show/4">shower</a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href= "show/5">wash dishes</a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href= "show/6">sweep and mop</a><span class="pomodoro-estimate">3 pomodoros</span></li>
-            <li><input type="checkbox"> <a href= "show/7">stream BTS</a><span class="pomodoro-estimate">3 pomodoros</span></li>
+            <% @todos.each do |todo|%>
+            <li><input type="checkbox" name=""/>
+                <a href="show/<%= todo.id %>"><%= todo.description %></a>
+                <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+            </li>
+            <% end %>
         </ol>
         
         <input type="text" placeholder="add a new To Do..">
