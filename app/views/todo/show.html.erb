@@ -1,11 +1,11 @@
   <h1>To Do list</h1> 
     <div>
-        <h2> clean room</h2>
-        <spon>1 pomodoro</spon>
+        <h2><%= @todo.description%></h2>
+        <spon><%= @todo.pomodoro_estimate %> pomodoro</spon>
         <a href="#" id="edit-todo-button">Edit</a>
         <a href="#" id="delete-todo-button">Delete</a>
         <a href="/todo/index" class="simple-link">Go back</a>  
-        <%= @todo_description %>
+        <%= @todo.description %>
 
         <h3>Todo #<%= params[:id] %></h3>
     </div>
