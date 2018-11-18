@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
- root to:'todo#index'
- get 'todo/new', to:'todo#new'
- get 'todo/show/:id', to:'todo#show'
- get 'todo/create',to:'todo#create'
- get 'todo/edit/:id', to:'todo#edit'
- get 'todo/update/:id', to:'todo#update' 
- get 'todo/destroy/:id', to:'todo#destroy'
+ root to:'bucketlist#index'
+ get 'bucketlist/new', to:'bucketlist#new'
+ get 'bucketlist/show/:id', to:'bucketlist#show'
+ get 'bucketlist/create',to:'bucketlist#create'
+ get 'bucketlist/edit/:id', to:'bucketlist#edit'
+ get 'bucketlist/update/:id', to:'bucketlist#update' 
+ get 'bucketlist/destroy/:id', to:'bucketlist#destroy'
+ get 'bucketlist/index', to:'bucketlist#index'
 end

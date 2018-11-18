@@ -1,21 +1,19 @@
 html {
     font-family:sans-serif;
-}
-
-h1 {
-    color: red;
+    background-image:url(https://media.giphy.com/media/3oz8xPjPPvOwrGjip2/giphy.gif);
+    background-size:cover
 }
 
 p {
-    color: orange;
+    color: red;
     
 }
 li {
-    color: blue;
+    color: black;
 }
 
 .pomodoro-estimate {
-    color: pink;
+    color: white;
     font-weight: bold;
     background-color:green;
     padding:5px 10px 5px 10px;
@@ -26,39 +24,60 @@ li {
     margin-top: 10px;
 }
 
-#add-new-todo-button {
+#add-new-item-button {
    font-size: 20px;
    margin-top: 10px;
    display: block;
    outline: none;
    border-style: none;
-   background-color: blue;
+   background-color:#8A2BE2;
    color: white;
    padding:7px;
 
 }
 
-#add-new-todo-button:active {
+#add-new-item-button:active {
     box-shadow:5px 5px 5px pink;
 }
 h1 {
-    text-align:center;
-    margin-top: 20px;
-    color: #734925;
+    font-style:sans-serif;
+    text-align:middle;
+    font-size: 50px;
+    margin-top: 10px;
+    color:#FFE4E1;
 }
 
 
 h2 {
-    display: inline-block;
-    font-size: 32px;
+    text-align:left;
+    /*display: inline-block;*/
+    font-size: 25px;
     vertical-align: middle;
-    color: purple;
-    margin: 20px 0px;
+    color: orange;
+    margin: 10px 0px;
 }
+
+
+h3 {
+    color: #FF4500;
+    font-size: 25px;
+    margin:15px 0px;
+}
+
 
 span {
     margin: 0px 0px 20px 0px;
     padding: 10px 15px 10px 15px;
     display:block;
     width: 130px;
+    color: #FFC0CB
+}
+
+
+a:visited {
+    color:#FFF0F5;
+}
+
+a {
+    color:#FFE4E1;
 }

@@ -1,0 +1,10 @@
+  <h1>To Do list</h1> 
+    <div>
+        <h2> <%= @bucketlist.description %> </h2>
+        <spon><%= @bucketlist.pomodoro_estimate %> importance</spon>
+        <a href="/bucketlist/edit/<%= @bucketlist.id %>" class="button edit-todo-button">Edit</a>
+        <a href="/bucketlist/destroy/<%= @bucketlist.id %>" id="delete-todo-button">Delete</a>
+        <a href="/" class="simple-link">Go back</a>  
+        
+        <h3>bucketlist #<%= params[:id] %></h3>
+    </div>

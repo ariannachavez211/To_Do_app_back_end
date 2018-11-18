@@ -1,0 +1,15 @@
+<%=2+2%>
+<h1>Bucket List</h1>
+<h2>your life goals</h2>
+<h3>what to complete</h3>    
+        
+        <ol>
+            <% @bucketlists.each do |bucketlist|%>
+            <li><input type="checkbox" name=""/>
+                <a href="/bucketlist/show/<%= bucketlist.id %>"><%= bucketlist.description %></a>
+                <span class="pomodoro-estimate small-pomodoro-estimate"><%= bucketlist.pomodoro_estimate %></span>
+            </li>
+            <% end %>
+        </ol>
+        <a href="/bucketlist/new"><input id="add-new-item-button"value="add new item" type=button/></a>
+        
